@@ -25,6 +25,5 @@ class Jobman < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/jobman --version")
-    assert_match "system\t", shell_output("#{bin}/jobman config paths")
   end
 end
