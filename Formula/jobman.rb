@@ -1,17 +1,17 @@
 class Jobman < Formula
   desc "Daemonless command-line job manager with retries, timeouts, and logs"
   homepage "https://github.com/ryancswallace/jobman"
-  version "1.1.4"
+  version "1.1.5"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/ryancswallace/jobman/releases/download/v1.1.4/jobman_1.1.4_darwin_amd64.tar.gz"
-      sha256 "23659da74de32c44cd9016bb0789ff762aa276a23d4ced7c227956c10cf9de27"
+      url "https://github.com/ryancswallace/jobman/releases/download/v1.1.5/jobman_1.1.5_darwin_amd64.tar.gz"
+      sha256 "0909ca9afdacfd9e57bc1b19f0ad017cc426561007f2bfd35fd76a1460e0c7c8"
     end
     on_arm do
-      url "https://github.com/ryancswallace/jobman/releases/download/v1.1.4/jobman_1.1.4_darwin_arm64.tar.gz"
-      sha256 "3102943d332a8c3822313cc4e6d978239bb536849fc31681927af97f522b1d35"
+      url "https://github.com/ryancswallace/jobman/releases/download/v1.1.5/jobman_1.1.5_darwin_arm64.tar.gz"
+      sha256 "57992e04d3786aa0671b4433608760128c17608a1c986a6ea419b3157a7c7de8"
     end
   end
 
