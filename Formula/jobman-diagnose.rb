@@ -5,7 +5,6 @@
 class JobmanDiagnose < Formula
   desc "Deterministic and AI-assisted diagnostics for Jobman failures"
   homepage "https://github.com/ryancswallace/Jobman-Diagnose"
-  version "0.1.0"
   license "MIT"
 
   depends_on "jobman"
