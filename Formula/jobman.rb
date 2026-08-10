@@ -27,6 +27,6 @@ class Jobman < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/jobman --version")
+    assert_match "jobman 1.4.0", shell_output("#{bin}/jobman --version")
   end
 end
