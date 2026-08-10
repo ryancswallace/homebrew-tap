@@ -12,12 +12,12 @@ class JobmanDiagnose < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ryancswallace/Jobman-Diagnose/releases/download/v0.2.0/jobman-diagnose_0.2.0_darwin_amd64.tar.gz"
-      sha256 "0acd0bf983002a82dfc8abf24e3eada7e8e644a7a66e0a065ee6a67093508ceb"
+      url "https://github.com/ryancswallace/Jobman-Diagnose/releases/download/v0.3.0/jobman-diagnose_0.3.0_darwin_amd64.tar.gz"
+      sha256 "1c5a2575a5cc5a36209eee90e2f25e32f4d65b11b8a2c7e0c9a3b4cc6ba63fde"
     end
     on_arm do
-      url "https://github.com/ryancswallace/Jobman-Diagnose/releases/download/v0.2.0/jobman-diagnose_0.2.0_darwin_arm64.tar.gz"
-      sha256 "f334f86cbbe5b40f039a62a5704e30f5c4bff8563f2c05c31538b48572b33b33"
+      url "https://github.com/ryancswallace/Jobman-Diagnose/releases/download/v0.3.0/jobman-diagnose_0.3.0_darwin_arm64.tar.gz"
+      sha256 "8c72019395aa1b5bc45368e60f9bf1308851a9b507fc37ee57ab9deaee4a567c"
     end
   end
 
@@ -28,6 +28,6 @@ class JobmanDiagnose < Formula
   end
 
   test do
-    assert_match "jobman-diagnose 0.2.0", shell_output("#{bin}/jobman-diagnose --version")
+    assert_match "jobman-diagnose 0.3.0", shell_output("#{bin}/jobman-diagnose --version")
   end
 end
