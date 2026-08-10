@@ -1,7 +1,10 @@
+# typed: strict
+# frozen_string_literal: true
+
+# Installs Jobman from its verified release archive.
 class Jobman < Formula
   desc "Daemonless command-line job manager with retries, timeouts, and logs"
   homepage "https://github.com/ryancswallace/jobman"
-  version "1.4.0"
   license "MIT"
 
   on_macos do

@@ -2,7 +2,8 @@
 
 This is the official Homebrew tap for
 [Jobman](https://github.com/ryancswallace/jobman), a daemonless command-line
-job manager.
+job manager, and its optional
+[Jobman Diagnose](https://github.com/ryancswallace/jobman-diagnose) companion.
 
 ## Install
 
@@ -10,6 +11,7 @@ Install the formula directly:
 
 ```sh
 brew install ryancswallace/tap/jobman
+brew install ryancswallace/tap/jobman-diagnose
 ```
 
 The formula installs the `jobman` executable, man pages, sample configuration,
@@ -29,8 +31,9 @@ exception.
 
 ## Maintenance
 
-The Jobman release workflow generates `Formula/jobman.rb` from the verified
-release archives and updates this tap only after the corresponding GitHub
-release is public. Do not edit the generated formula manually. Report packaging
-problems in the [Jobman issue
-tracker](https://github.com/ryancswallace/jobman/issues).
+The projects' release workflows generate their formulas only from verified
+public release archives. Updates arrive as pull requests; protected `main`
+requires strict online audit, installation, and formula tests for both formulas
+on Intel and Apple Silicon runners before auto-merge. Do not edit generated
+formulas manually. Report packaging problems in the relevant project's issue
+tracker.
