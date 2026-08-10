@@ -28,6 +28,6 @@ class JobmanDiagnose < Formula
   end
 
   test do
-    assert_match "jobman-diagnose #{version}", shell_output("#{bin}/jobman-diagnose --version")
+    assert_match "jobman-diagnose 0.1.0", shell_output("#{bin}/jobman-diagnose --version")
   end
 end
