@@ -9,12 +9,12 @@ class Jobman < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ryancswallace/jobman/releases/download/v1.5.0/jobman_1.5.0_darwin_amd64.tar.gz"
-      sha256 "47ef285d9ac83e74327600768c687eee9de16603e29adfc7da9e8bc66c23a32c"
+      url "https://github.com/ryancswallace/jobman/releases/download/v1.6.0/jobman_1.6.0_darwin_amd64.tar.gz"
+      sha256 "04e34f3cabda6ffa136c9b54859e225385fa5aa77cbfb768ece13a86172c41c8"
     end
     on_arm do
-      url "https://github.com/ryancswallace/jobman/releases/download/v1.5.0/jobman_1.5.0_darwin_arm64.tar.gz"
-      sha256 "f667c1f7077db9aa76fdb437b23c7216f769957295eaa5f4e8dc7f8084d70216"
+      url "https://github.com/ryancswallace/jobman/releases/download/v1.6.0/jobman_1.6.0_darwin_arm64.tar.gz"
+      sha256 "fd6d540ff3241dde629d6fe2e518d7fce63146b645b248c039448a2796341a99"
     end
   end
 
@@ -27,6 +27,6 @@ class Jobman < Formula
   end
 
   test do
-    assert_match "jobman 1.5.0", shell_output("#{bin}/jobman --version")
+    assert_match "jobman 1.6.0", shell_output("#{bin}/jobman --version")
   end
 end
