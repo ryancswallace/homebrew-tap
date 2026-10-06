@@ -3,7 +3,9 @@
 This is the official Homebrew tap for
 [Jobman](https://github.com/ryancswallace/jobman), a daemonless command-line
 job manager, and its optional
-[Jobman Diagnose](https://github.com/ryancswallace/jobman-diagnose) companion.
+[Jobman Diagnose](https://github.com/ryancswallace/jobman-diagnose) companion,
+and [Jobman Control](https://github.com/ryancswallace/jobman-control), the shared
+PostgreSQL-backed control plane.
 
 ## Install
 
@@ -12,6 +14,7 @@ Install the formula directly:
 ```sh
 brew install ryancswallace/tap/jobman
 brew install ryancswallace/tap/jobman-diagnose
+brew install ryancswallace/tap/jobman-control
 ```
 
 The formula installs the `jobman` executable, man pages, sample configuration,
@@ -32,8 +35,8 @@ exception.
 ## Maintenance
 
 The projects' release workflows generate their formulas only from verified
-public release archives. Updates arrive as pull requests; protected `main`
-requires strict online audit, installation, and formula tests for both formulas
-on Intel and Apple Silicon runners before auto-merge. Do not edit generated
+public release archives. Updates arrive as pull requests. CI runs strict online audit, installation, and
+formula tests for all three formulas on Intel and Apple Silicon runners. Review
+all results before merging; `main` also enforces its configured required checks. Do not edit generated
 formulas manually. Report packaging problems in the relevant project's issue
 tracker.
