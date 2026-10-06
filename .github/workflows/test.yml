@@ -77,7 +77,7 @@ jobs:
               ;;
             jobman-control)
               test -x "$(brew --prefix)/bin/jobman-control"
-              "$(brew --prefix)/bin/jobman-control" --help >/dev/null
+              "$(brew --prefix)/bin/jobman-control" --version >/dev/null
               ;;
             jobman-diagnose)
               test -x "$(brew --prefix)/bin/jobman-diagnose"
