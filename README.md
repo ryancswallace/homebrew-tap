@@ -35,8 +35,8 @@ exception.
 ## Maintenance
 
 The projects' release workflows generate their formulas only from verified
-public release archives. Updates arrive as pull requests; protected `main`
-requires strict online audit, installation, and formula tests for all three formulas
-on Intel and Apple Silicon runners before auto-merge. Do not edit generated
+public release archives. Updates arrive as pull requests. CI runs strict online audit, installation, and
+formula tests for all three formulas on Intel and Apple Silicon runners. Review
+all results before merging; `main` also enforces its configured required checks. Do not edit generated
 formulas manually. Report packaging problems in the relevant project's issue
 tracker.
