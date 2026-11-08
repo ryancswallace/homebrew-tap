@@ -8,12 +8,12 @@ class JobmanControl < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ryancswallace/jobman-control/releases/download/v0.2.1/jobman-control_0.2.1_darwin_amd64.tar.gz"
-      sha256 "41cce25043b1963469ad53e2ecda0779b69c5321d9f996be47ca040e3128271b"
+      url "https://github.com/ryancswallace/jobman-control/releases/download/v0.3.0/jobman-control_0.3.0_darwin_amd64.tar.gz"
+      sha256 "19ddfd3339cd691c44f059970d3539307d02ec5f616225631d1565ccaffe0984"
     end
     on_arm do
-      url "https://github.com/ryancswallace/jobman-control/releases/download/v0.2.1/jobman-control_0.2.1_darwin_arm64.tar.gz"
-      sha256 "fba06e15ecc6eb3bf04336c394b4e168920d2738906c1a7b356b1611d5a44a8c"
+      url "https://github.com/ryancswallace/jobman-control/releases/download/v0.3.0/jobman-control_0.3.0_darwin_arm64.tar.gz"
+      sha256 "7906441c73e06fb87a8a05cbb2f6c1c7791c34a8a2fb24910a65179784774787"
     end
   end
 
@@ -24,6 +24,6 @@ class JobmanControl < Formula
   end
 
   test do
-    assert_match "jobman-control 0.2.1", shell_output("#{bin}/jobman-control --version")
+    assert_match "jobman-control 0.3.0", shell_output("#{bin}/jobman-control --version")
   end
 end
