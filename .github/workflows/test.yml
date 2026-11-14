@@ -6,6 +6,8 @@ on:
     branches:
       - main
   pull_request:
+  workflow_call:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -45,6 +47,8 @@ jobs:
     steps:
       - name: Checkout tap
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Register checked-out tap
         run: |
