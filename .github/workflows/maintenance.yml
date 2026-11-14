@@ -1,0 +1,19 @@
+---
+name: Repository maintenance
+
+on:
+  schedule:
+    - cron: "23 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: homebrew-tap-maintenance
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Audit and test Homebrew formulas
+    uses: ./.github/workflows/test.yml
