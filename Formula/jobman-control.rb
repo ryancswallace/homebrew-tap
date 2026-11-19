@@ -1,7 +1,7 @@
 # typed: strict
 # frozen_string_literal: true
 
-# Release checksum manifest SHA-256: fb3c0f5dee3834be79b7c89417e3ca07328ba4e103723f5f7aba9a878838d74f
+# Release checksum manifest SHA-256: af0bf4602954c2fac1b8aa05b52e5dde9d44ea8d0111d50505f988cb6c112e3b
 class JobmanControl < Formula
   desc "Shared PostgreSQL-backed control plane for Jobman"
   homepage "https://github.com/ryancswallace/jobman-control"
@@ -9,12 +9,12 @@ class JobmanControl < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ryancswallace/jobman-control/releases/download/v0.4.2/jobman-control_0.4.2_darwin_amd64.tar.gz"
-      sha256 "6f7cfe697077b0da6e5abf796bba94230622af3fc4163c3a6f7f3f0dcfde3ce1"
+      url "https://github.com/ryancswallace/jobman-control/releases/download/v0.4.3/jobman-control_0.4.3_darwin_amd64.tar.gz"
+      sha256 "3260975bd7b55ae991a15926e61df174fcb08cc42548d3150a6981f1f2483190"
     end
     on_arm do
-      url "https://github.com/ryancswallace/jobman-control/releases/download/v0.4.2/jobman-control_0.4.2_darwin_arm64.tar.gz"
-      sha256 "318ee2d6f46054b935f1f44fbb79ab7ba5096be6db372877583b9845dc37300f"
+      url "https://github.com/ryancswallace/jobman-control/releases/download/v0.4.3/jobman-control_0.4.3_darwin_arm64.tar.gz"
+      sha256 "f844ed437a27f972817ba166dbe33f359a189994f8250695d1622539ef93ed2d"
     end
   end
 
@@ -25,6 +25,6 @@ class JobmanControl < Formula
   end
 
   test do
-    assert_match "jobman-control 0.4.2", shell_output("#{bin}/jobman-control --version")
+    assert_match "jobman-control 0.4.3", shell_output("#{bin}/jobman-control --version")
   end
 end
